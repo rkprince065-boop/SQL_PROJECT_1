@@ -30,17 +30,17 @@ Possible Errors:
 
 -- NOTE: This has been updated from the video to fix issues with encoding
 COPY company_dim
-FROM 'D:\SQL_PRACTICE\csv files for practice\company_dim.csv'
+FROM 'H:\SQL_PROJECT_1\csv_files\company_dim.csv'
 WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
 
 COPY skills_dim
-FROM 'D:\SQL_PRACTICE\csv files for practice\skills_dim.csv'
+FROM 'H:\SQL_PROJECT_1\csv_files\skills_dim.csv'
 WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
 
 COPY job_postings_fact
-FROM 'D:\SQL_PRACTICE\csv files for practice\job_postings_fact.csv'
+FROM 'H:\SQL_PROJECT_1\csv_files\job_postings_fact.csv'
 WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
 
 COPY skills_job_dim
-FROM 'D:\SQL_PRACTICE\csv files for practice\skills_job_dim.csv'
+FROM 'H:\SQL_PROJECT_1\csv_files\skills_job_dim.csv'
 WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
